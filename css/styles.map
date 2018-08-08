@@ -1,0 +1,42 @@
+{
+	"version": 3,
+	"file": "../scss/styles.css",
+	"sources": [
+		"../scss/styles.scss",
+		"../scss/base/_index.scss",
+		"../scss/base/_normalize.scss",
+		"../scss/base/_base.scss",
+		"../scss/components/_index.scss",
+		"../scss/components/_typography.scss",
+		"../scss/components/_navigation.scss",
+		"../scss/components/_forms.scss",
+		"../scss/components/_grid.scss",
+		"../scss/components/_buttons.scss",
+		"../scss/components/_images.scss",
+		"../scss/utilities/_index.scss",
+		"../scss/utilities/_variables.scss",
+		"../scss/utilities/_placeholders.scss",
+		"../scss/utilities/_functions.scss",
+		"../scss/utilities/_mixins.scss"
+	],
+	"sourcesContent": [
+		"@import 'base/index',\r\n        'components/index',\r\n        'utilities/index';\r\n",
+		"@import 'normalize',\r\n        'base';\r\n",
+		"",
+		"",
+		"@import 'typography',\r\n        'navigation',\r\n        'forms',\r\n        'grid',\r\n        'buttons',\r\n        'images';\r\n",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"@import 'variables',\r\n        'placeholders',\r\n        'functions',\r\n        'mixins';\r\n",
+		"// Create a partial for variables in your utilities folder\r\n//   - Use this partial to create variables for your repeated values.\r\n//   - At minimum, create variables for fonts, breakpoints, and colors.\r\n//   - Import this partial into your utilities/index.scss file\r\n",
+		"// Create a partial for your placeholders in your utilities folder\r\n// In your placeholder partial, create placeholders for at least the following:\r\n//   - Links\r\n//   - Images\r\n//   - Headlines\r\n//   - Nav items\r\n",
+		"",
+		"// Create a partial for your mixins in your utilities folder\r\n// Inside your mixins partial, you’ll want to create mixins for:\r\n//   - Media Queries\r\n//   - Flexbox settings\r\n"
+	],
+	"mappings": "",
+	"names": []
+}
