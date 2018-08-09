@@ -2,3 +2,65 @@
 //   - Use this partial to create variables for your repeated values.
 //   - At minimum, create variables for fonts, breakpoints, and colors.
 //   - Import this partial into your utilities/index.scss file
+
+//=========================================================================
+//                                 Colors
+//=========================================================================
+
+// misc colors
+
+$color-primary: #58e1c1;
+$color-secondary: #51ddfc;
+$color-font-primary: #808080;
+$color-font-alternate: #fff;
+$color-font-secondary: #787878;
+
+// colors-button
+
+
+$btn-colors: (
+  'default': $color-secondary,
+  'success': #63cc82,
+  'error'  : #e4757a,
+  'warning': #fd7856,
+  'info'   : #927bc1,
+);
+
+// colors-grid
+
+$grid-color-03:  #deb2ee;
+$grid-color-04:  #7ee6fd;
+$grid-color-05:  #88d9a0;
+$grid-color-06:  #3fabca;
+$grid-color-07:  #ec9fa3;
+$grid-color-08:  #fd9f85;
+$grid-color-12:  #80e8d1;
+
+
+//==========================================================================
+//                                 Fonts
+//==========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//==========================================================================
+//                      Media Queries & Breakpoints
+//==========================================================================
+
+$brk-dsktp: ('(min-width: 768px)');
+
+
+
+
+$gutter: 10px;

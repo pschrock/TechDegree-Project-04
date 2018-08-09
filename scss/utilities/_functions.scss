@@ -1,0 +1,5 @@
+@each $btn-type, $btn-color in ($btn-colors) {
+  .btn--#{$btn-type} {
+    background: $btn-color;
+  }
+}
