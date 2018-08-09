@@ -17,7 +17,6 @@ $color-font-secondary: #787878;
 
 // colors-button
 
-
 $btn-colors: (
   'default': $color-secondary,
   'success': #63cc82,
@@ -28,13 +27,15 @@ $btn-colors: (
 
 // colors-grid
 
-$grid-color-03:  #deb2ee;
-$grid-color-04:  #7ee6fd;
-$grid-color-05:  #88d9a0;
-$grid-color-06:  #3fabca;
-$grid-color-07:  #ec9fa3;
-$grid-color-08:  #fd9f85;
-$grid-color-12:  #80e8d1;
+$grid-colors: (
+  '3' :  #deb2ee,
+  '4' :  #7ee6fd,
+  '5' :  #88d9a0,
+  '6' :  #3fabca,
+  '7' :  #ec9fa3,
+  '8' :  #fd9f85,
+  '12':  #80e8d1,
+);
 
 
 //==========================================================================
@@ -63,4 +64,4 @@ $brk-dsktp: ('(min-width: 768px)');
 
 
 
-$gutter: 10px;
+$gutter: 25px;

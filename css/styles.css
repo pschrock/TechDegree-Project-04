@@ -23,6 +23,41 @@
   background: #927bc1;
 }
 
+/* line 8, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_functions.scss */
+.grid__col--3.theme__colors {
+  background: #deb2ee;
+}
+
+/* line 8, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_functions.scss */
+.grid__col--4.theme__colors {
+  background: #7ee6fd;
+}
+
+/* line 8, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_functions.scss */
+.grid__col--5.theme__colors {
+  background: #88d9a0;
+}
+
+/* line 8, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_functions.scss */
+.grid__col--6.theme__colors {
+  background: #3fabca;
+}
+
+/* line 8, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_functions.scss */
+.grid__col--7.theme__colors {
+  background: #ec9fa3;
+}
+
+/* line 8, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_functions.scss */
+.grid__col--8.theme__colors {
+  background: #fd9f85;
+}
+
+/* line 8, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_functions.scss */
+.grid__col--12.theme__colors {
+  background: #80e8d1;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -420,20 +455,31 @@ ul {
 
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
 .container {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_buttons.scss */
-.theme__colors {
+[class^='btn--'] {
   padding: 10px;
-  min-width: 100%;
   max-width: 100%;
-  margin: 10px;
-  text-transform: uppercase;
-  color: #fff;
-  border: none;
+  margin: 12.5px 0;
   border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  min-width: 100%;
+  border: none;
+}
+
+/* line 10, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_buttons.scss */
+[class^='grid__col--'] {
+  padding: 10px;
+  max-width: 100%;
+  margin: 12.5px 0;
+  border-radius: 5px;
+  text-align: center;
+  color: #787878;
+  font-weight: bolder;
 }
 
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_images.scss */

@@ -3,3 +3,9 @@
     background: $btn-color;
   }
 }
+
+@each $grid-num, $grid-color in ($grid-colors) {
+  .grid__col--#{$grid-num}.theme__colors {
+    background: $grid-color;
+  }
+}
