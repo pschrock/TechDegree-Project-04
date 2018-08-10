@@ -1,0 +1,13 @@
+.form__label--hidden {
+  display: none;
+}
+
+.form__input {
+  display: block;
+  border: none;
+  border-bottom: 5px solid $color-primary;
+  max-width: 100%;
+  min-width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+}

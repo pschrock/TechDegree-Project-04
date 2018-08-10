@@ -42,7 +42,9 @@ $grid-colors: (
 //                                 Fonts
 //==========================================================================
 
-
+$stack-sans-serif: Helvetica, Arial, sans-serif;
+$stack-helvetica: 'Helvetica Neue', $stack-sans-serif;
+$stack-lucida: Lucida, sans-serif;
 
 
 
@@ -65,3 +67,4 @@ $brk-dsktp: ('(min-width: 768px)');
 
 
 $gutter: 25px;
+$brdr-space: 25px;

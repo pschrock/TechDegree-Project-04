@@ -1,16 +1,8 @@
 [class^='btn--'] {
-  @include buttons {
+  @include buttons-and-grids {
     color: $color-font-alternate;
     text-transform: uppercase;
     min-width: 100%;
     border: none;
-  }
-}
-
-[class^='grid__col--'] {
-  @include buttons {                    //div
-    text-align: center;
-    color: $color-font-secondary;
-    font-weight: bolder;
   }
 }

@@ -429,16 +429,52 @@ template {
 }
 
 /* line 5, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/base/_base.scss */
-ul {
+.nav {
   list-style-type: none;
   padding-left: 0;
   text-align: center;
 }
 
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_typography.scss */
+.container {
+  color: #808080;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+/* line 5, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_typography.scss */
+.container p {
+  line-height: 1.5em;
+}
+
+/* line 9, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_typography.scss */
+.headline--primary {
+  color: #58e1c1;
+  font-weight: 800;
+  padding: 25px;
+}
+
+/* line 15, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_typography.scss */
+.headline--secondary {
+  font-size: 1.15em;
+  padding: 15px 0;
+  font-weight: 100;
+}
+
+/* line 21, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_typography.scss */
+.link {
+  color: #51ddfc;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+/* line 27, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_typography.scss */
 .blockquote {
   border-left: 5px solid #58e1c1;
   border-radius: 5px;
+  padding-left: 25px;
+  font-style: italic;
+  font-size: 1.5em;
 }
 
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_navigation.scss */
@@ -453,10 +489,41 @@ ul {
   color: #808080;
 }
 
+/* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_forms.scss */
+.form__label--hidden {
+  display: none;
+}
+
+/* line 5, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_forms.scss */
+.form__input {
+  display: block;
+  border: none;
+  border-bottom: 5px solid #58e1c1;
+  max-width: 100%;
+  min-width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
 .container {
   margin-left: 25px;
   margin-right: 25px;
+}
+
+/* line 6, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
+.grid__row {
+  padding: 10px 0;
+}
+
+/* line 10, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
+[class^='grid__col--'].theme__colors {
+  padding: 10px;
+  max-width: 100%;
+  margin: 12.5px 0;
+  border-radius: 5px;
+  color: #787878;
+  font-weight: bolder;
 }
 
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_buttons.scss */
@@ -471,21 +538,25 @@ ul {
   border: none;
 }
 
-/* line 10, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_buttons.scss */
-[class^='grid__col--'] {
-  padding: 10px;
-  max-width: 100%;
-  margin: 12.5px 0;
-  border-radius: 5px;
-  text-align: center;
-  color: #787878;
-  font-weight: bolder;
-}
-
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_images.scss */
 .img--logo {
   display: block;
   margin: 50px auto;
+}
+
+/* line 6, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_images.scss */
+.img--frame,
+.img--avatar {
+  display: block;
+  margin: auto;
+  padding: 25px;
+  max-width: 100%;
+}
+
+/* line 14, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_images.scss */
+.img--frame {
+  border: 1px solid #cdcdcd;
+  padding: 12.5px;
 }
 
 /*# sourceMappingURL=../css/styles.map */

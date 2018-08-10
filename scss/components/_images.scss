@@ -2,3 +2,16 @@
   display: block;
   margin: 50px auto;
 }
+
+.img--frame,
+.img--avatar {
+  display: block;
+  margin: auto;
+  padding: $brdr-space;
+  max-width: 100%;
+}
+
+.img--frame {
+  border: 1px solid lighten($color-font-primary, 30%);
+  padding: $brdr-space/2;
+}

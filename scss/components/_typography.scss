@@ -1,4 +1,33 @@
+.container {
+  color: $color-font-primary;
+  font-family: $stack-helvetica;
+  font-weight: lighter;
+  & p {
+    line-height: 1.5em;
+  }
+}
+.headline--primary {
+  color: $color-primary;
+  font-weight: 800;
+  padding: $gutter;
+}
+
+.headline--secondary {
+  font-size: 1.15em;
+  padding: 15px 0;
+  font-weight: 100;
+}
+
+.link {
+  color: $color-secondary;
+  text-decoration: none;
+  font-weight: 800;
+}
+
 .blockquote {
   border-left: 5px solid $color-primary;
   @include rounded(5px);
+  padding-left: $brdr-space;
+  font-style: italic;
+  font-size: 1.5em;
 }
