@@ -3,91 +3,54 @@
 //   - Media Queries
 //   - Flexbox settings
 
+@mixin element-padding-spacer($pad) {
+  padding: $pad;
+}
+
+@mixin heading-spacer($pad) {
+  padding: $pad 0;
+}
+
 @mixin rounded($rb) {
   border-radius: $rb;
 }
 
-@mixin flex-buttons {
-  .grid__col--12 {
-    display: flex;
-    flex-wrap: wrap;
-    button {
-      flex: 1 100%;
-      flex-direction: column;
-      @media (min-width: 768px) {
-        flex: 1 20%;
-        flex-direction: row;
-      }
-    }
-  }
-}
-
 @mixin grids {
-  padding: 10px;
-  max-width: 100%;
-  margin: $gutter/2 0;
   @include rounded(5px);
   @content;
 }
 
-@mixin flex-nav {
-  @media (min-width: 768px) {
-    & {
-      display: flex;
+
+// Flex Media Queries
+@mixin flex-mq($index, $dividend, $inc: 0, $fgrow: 1) {
+  @while $index > 2 {
+    @media #{$brk-dsktp} {
+      .grid__col--#{$index} {
+        flex: $fgrow;
+      }
+      @content;
     }
-    .grid__col--3 {
-      flex: 1;
-      margin: auto;
+    $index : $index / $dividend;
+    @if $inc > 0 {
+      $fgrow : $fgrow - 1;
     }
-    .grid__col--9 {
-      flex: 1;
-      margin: auto;
-    }
-    .img--logo {
-      margin: $margins;
-    }
-    @include flex-nav-items;
   }
 }
 
 @mixin flex-nav-items {
   .nav {
     display: flex;
-    margin: auto;
-  }
-  .nav__item {
-    padding: $padding;
-  }
-}
-
-@mixin flex-typo-form {
-  @media (min-width: 768px) {
-    & {
-      display: flex;
-    }
-    .grid__col--8 {
-      flex: 2;
-      padding-left: $padding;
-      padding-right: $padding;
-      h4 {
-        margin: 0;
-      }
-    }
-    .grid__col--4 {
-      flex: 1;
-      padding-left: $padding;
-      padding-right: $padding;
+    flex-direction: column;
+    @media #{$brk-dsktp} {
+      flex-direction: row;
     }
   }
 }
 
-@mixin flex-images {
-  @media (min-width: 768px) {
-    & {
-      display: flex;
-    }
-    .grid__col--6 {
-      flex: 1;
+@mixin center-col7 {
+  @media #{$brk-dsktp} {
+    .centered {
+      max-width: 75%;
       margin: auto;
     }
   }

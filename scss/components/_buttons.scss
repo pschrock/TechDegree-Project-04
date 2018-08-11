@@ -1,13 +1,25 @@
-.grid__col--12 button,
-.form button {
-  padding: $padding;
-  max-width: 100%;
-  min-width: 100%;
-  margin: $margins 0;
-  @include rounded(5px);
-  display: block;
-  color: $color-font-alternate;
-  text-transform: uppercase;
-  border: none;
-  text-align: center;
+.grid__col--12 {
+  flex: 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media #{$brk-dsktp} {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  button {
+    flex: 1 100%;
+    @media #{$brk-dsktp} {
+      flex: 1 20%;
+      margin: 0 $med;
+    }
+    @include element-padding-spacer($med);
+    @include rounded(5px);
+    margin-bottom: $med;
+    text-align: center;
+    display: block;
+    color: $color-font-alternate;
+    text-transform: uppercase;
+    border: none;
+  }
 }

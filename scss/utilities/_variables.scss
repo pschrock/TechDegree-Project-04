@@ -37,7 +37,6 @@ $grid-colors: (
   '12':  #80e8d1,
 );
 
-
 //==========================================================================
 //                                 Fonts
 //==========================================================================
@@ -46,27 +45,16 @@ $stack-sans-serif: Helvetica, Arial, sans-serif;
 $stack-helvetica: 'Helvetica Neue', $stack-sans-serif;
 $stack-lucida: Lucida, sans-serif;
 
-
-
-
-
-
-
-
-
-
-
-
 //==========================================================================
 //                      Media Queries & Breakpoints
 //==========================================================================
 
-$brk-dsktp: '@media (min-width: 768px)';
-
-
-
+$brk-dsktp      : '(min-width: 768px)';
+$brk-max-width  : '(min width: 1024px)';
 
 $gutter: 25px;
 $brdr-space: 25px;
-$margins: 25px;
-$padding: 12px;
+
+$lg: 25px;
+$med: 12px;
+$sm: 5px;

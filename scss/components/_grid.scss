@@ -4,17 +4,36 @@
 }
 
 .grid__row {
-  padding: $padding 0;
-  @include flex-nav;
-  @include flex-typo-form;
-  @include flex-images;
+  @include heading-spacer ($med);
+  @extend %flex-display-mq;
+
+  // Nav Bar
+  @include flex-mq(9,3) {
+    .img--logo {
+      margin: 0;
+    }
+  };
+  @include flex-nav-items;
+
+  // Typograph & Forms
+  @include flex-mq(8,2,1,2);
+
+  // Images
+  @include flex-mq(6,3);
 }
 
-@include flex-buttons;
 
-[class^=".grid__col--"].theme__colors {
-  @include grids {                    //div
-    color: $color-font-secondary;
-    font-weight: bolder;
-  }
+.theme__colors {
+  @include rounded(5px);
+  @include element-padding-spacer($med);
+  margin: $sm;
 }
+
+// misc grid col
+.grid__col--5 {
+  flex: 1;
+}
+.grid__col--7 {
+  flex: 2;
+}
+@include center-col7

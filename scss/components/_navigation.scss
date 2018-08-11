@@ -1,6 +1,11 @@
+.nav {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .nav__item {
-  padding: 5px;
-  max-width: 100%;
+  @include element-padding-spacer($med);
+  text-align: center;
   a {
     text-decoration: none;
     color: $color-font-primary;

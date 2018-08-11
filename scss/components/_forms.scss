@@ -3,11 +3,22 @@
 }
 
 .form__input {
+  @extend %element-center;
   display: block;
+  @include element-padding-spacer($med);
   border: none;
   border-bottom: 5px solid $color-primary;
-  max-width: 100%;
   min-width: 90%;
-  margin: 20px auto;
-  padding: $padding;
+}
+
+.form button {
+  @include element-padding-spacer($med);
+  @include rounded(5px);
+  margin-top: $lg;
+  text-align: center;
+  min-width: 100%;
+  display: block;
+  color: $color-font-alternate;
+  text-transform: uppercase;
+  border: none;
 }
