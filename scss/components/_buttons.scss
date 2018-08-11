@@ -1,8 +1,13 @@
-[class^='btn--'] {
-  @include buttons-and-grids {
-    color: $color-font-alternate;
-    text-transform: uppercase;
-    min-width: 100%;
-    border: none;
-  }
+.grid__col--12 button,
+.form button {
+  padding: $padding;
+  max-width: 100%;
+  min-width: 100%;
+  margin: $margins 0;
+  @include rounded(5px);
+  display: block;
+  color: $color-font-alternate;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
 }

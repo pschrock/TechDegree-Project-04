@@ -61,10 +61,12 @@ $stack-lucida: Lucida, sans-serif;
 //                      Media Queries & Breakpoints
 //==========================================================================
 
-$brk-dsktp: ('(min-width: 768px)');
+$brk-dsktp: '@media (min-width: 768px)';
 
 
 
 
 $gutter: 25px;
 $brdr-space: 25px;
+$margins: 25px;
+$padding: 12px;

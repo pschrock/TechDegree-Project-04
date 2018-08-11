@@ -4,11 +4,16 @@
 }
 
 .grid__row {
-  padding: 10px 0;
+  padding: $padding 0;
+  @include flex-nav;
+  @include flex-typo-form;
+  @include flex-images;
 }
 
-[class^='grid__col--'].theme__colors {
-  @include buttons-and-grids {                    //div
+@include flex-buttons;
+
+[class^=".grid__col--"].theme__colors {
+  @include grids {                    //div
     color: $color-font-secondary;
     font-weight: bolder;
   }
