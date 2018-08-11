@@ -11,3 +11,8 @@
     color: $color-font-primary;
   }
 }
+
+.nav__item:hover, .nav__item:focus {
+  background: $color-primary;
+  @include rounded($sm);
+}

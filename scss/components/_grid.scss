@@ -1,10 +1,13 @@
 .container {
   margin-left: $gutter;
   margin-right: $gutter;
+  >div, >h4 {    
+    @include maximum;
+  }
 }
 
 .grid__row {
-  @include heading-spacer ($med);
+  padding: $sm 0;
   @extend %flex-display-mq;
 
   // Nav Bar

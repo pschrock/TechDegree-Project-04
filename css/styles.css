@@ -463,6 +463,7 @@ template {
 /* line 15, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_typography.scss */
 .headline--secondary {
   padding: 12px 0;
+  margin: 25px 0;
   font-size: 1.15em;
   font-weight: 100;
 }
@@ -501,6 +502,12 @@ template {
   color: #808080;
 }
 
+/* line 15, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_navigation.scss */
+.nav__item:hover, .nav__item:focus {
+  background: #58e1c1;
+  border-radius: 5px;
+}
+
 /* line 1, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_forms.scss */
 .form__label--hidden {
   display: none;
@@ -534,88 +541,96 @@ template {
   margin-right: 25px;
 }
 
-/* line 6, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
+@media (min-width: 1024px) {
+  /* line 4, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
+  .container > div, .container > h4 {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+
+/* line 9, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
 .grid__row {
-  padding: 12px 0;
+  padding: 5px 0;
 }
 
 @media (min-width: 768px) {
-  /* line 28, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
+  /* line 29, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
   .grid__row .grid__col--9 {
     flex: 1;
   }
-  /* line 12, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
+  /* line 15, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
   .grid__row .img--logo {
     margin: 0;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 28, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
+  /* line 29, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
   .grid__row .grid__col--3 {
     flex: 1;
   }
-  /* line 12, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
+  /* line 15, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
   .grid__row .img--logo {
     margin: 0;
   }
 }
 
-/* line 41, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
+/* line 42, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
 .grid__row .nav {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 768px) {
-  /* line 41, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
+  /* line 42, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
   .grid__row .nav {
     flex-direction: row;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 28, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
+  /* line 29, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
   .grid__row .grid__col--8 {
     flex: 2;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 28, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
+  /* line 29, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
   .grid__row .grid__col--4 {
     flex: 1;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 28, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
+  /* line 29, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
   .grid__row .grid__col--6 {
     flex: 1;
   }
 }
 
-/* line 26, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
+/* line 29, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
 .theme__colors {
   border-radius: 5px;
   padding: 12px;
   margin: 5px;
 }
 
-/* line 33, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
+/* line 36, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
 .grid__col--5 {
   flex: 1;
 }
 
-/* line 36, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
+/* line 39, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/components/_grid.scss */
 .grid__col--7 {
   flex: 2;
 }
 
 @media (min-width: 768px) {
-  /* line 52, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
+  /* line 53, C:/Users/Peter/Documents/Treehouse/Techdegree Projects/Project 04 - Style Guide/TechDegree-Project-04/scss/utilities/_mixins.scss */
   .centered {
-    max-width: 75%;
+    max-width: 66%;
     margin: auto;
   }
 }

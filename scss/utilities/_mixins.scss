@@ -9,6 +9,7 @@
 
 @mixin heading-spacer($pad) {
   padding: $pad 0;
+  margin: $lg 0;
 }
 
 @mixin rounded($rb) {
@@ -50,8 +51,15 @@
 @mixin center-col7 {
   @media #{$brk-dsktp} {
     .centered {
-      max-width: 75%;
+      max-width: 66%;
       margin: auto;
     }
+  }
+}
+
+@mixin maximum {
+  @media #{$brk-maxwidth} {
+    max-width: 1024px;
+    margin: auto;
   }
 }

@@ -9,3 +9,14 @@
     background: $grid-color;
   }
 }
+
+// @each $href-name, $nav-item in ($nav-items) {
+//   [href='#{$href-name}']:hover {
+//     .nav__item {
+//       &:nth-child(#{$nav-item}) {
+//         background: $color-primary;
+//         @include rounded($sm);
+//       }
+//     }
+//   }
+// }
