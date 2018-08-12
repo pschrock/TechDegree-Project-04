@@ -21,6 +21,12 @@
   @content;
 }
 
+@mixin maximum {
+  @media #{$brk-maxwidth} {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
 
 // Flex Media Queries
 @mixin flex-mq($index, $dividend, $inc: 0, $fgrow: 1) {
@@ -54,12 +60,5 @@
       max-width: 66%;
       margin: auto;
     }
-  }
-}
-
-@mixin maximum {
-  @media #{$brk-maxwidth} {
-    max-width: 1024px;
-    margin: auto;
   }
 }

@@ -1,5 +1,5 @@
 .nav {
-  list-style-type: none;
+  @extend %style-none;
   padding-left: 0;
 }
 
@@ -7,7 +7,7 @@
   @include element-padding-spacer($med);
   text-align: center;
   a {
-    text-decoration: none;
+    @extend %no-decoration;
     color: $color-font-primary;
   }
 }

@@ -1,13 +1,24 @@
 // Create a partial for your placeholders in your utilities folder
 // In your placeholder partial, create placeholders for at least the following:
 //   - Links
-
+%no-decoration {
+  text-decoration: none;
+}
 //   - Images
-
+%img-display {
+  display: block;
+}
 //   - Headlines
-
+%headline-color {
+  color: $color-primary;
+}
 //   - Nav items
+%style-none {
+  list-style-type: none;
+}
 
+
+// Misc
 %element-center {
   margin: 0 auto;
 }

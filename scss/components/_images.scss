@@ -1,12 +1,12 @@
 .img--logo {
-  display: block;
+  @extend %img-display;
   @include element-padding-spacer($med);
   @extend %element-center;
 }
 
 .img--frame,
 .img--avatar {
-  display: block;
+  @extend %img-display;
   @include element-padding-spacer($lg);
   @extend %element-center;
   max-width: 100%;

@@ -7,7 +7,7 @@
   }
 }
 .headline--primary {
-  color: $color-primary;
+  @extend %headline-color;
   font-weight: 800;
   margin-left: $gutter;
 }
@@ -20,7 +20,7 @@
 
 .link {
   color: $color-secondary;
-  text-decoration: none;
+  @extend %no-decoration;
   font-weight: 800;
 }
 
